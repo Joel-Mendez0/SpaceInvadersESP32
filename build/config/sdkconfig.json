@@ -465,7 +465,6 @@
     "IDF_TARGET_ARCH_XTENSA": true,
     "IDF_TARGET_ESP32": true,
     "IDF_TOOLCHAIN": "gcc",
-    "JD_USE_ROM": true,
     "LCD_ENABLE_DEBUG_LOG": false,
     "LCD_PANEL_IO_FORMAT_BUF_SIZE": 32,
     "LEDC_CTRL_FUNC_IN_IRAM": false,

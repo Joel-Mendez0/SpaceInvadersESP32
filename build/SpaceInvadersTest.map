@@ -7980,7 +7980,6 @@ LOAD esp-idf/nvs_sec_provider/libnvs_sec_provider.a
 LOAD esp-idf/perfmon/libperfmon.a
 LOAD esp-idf/wifi_provisioning/libwifi_provisioning.a
 LOAD esp-idf/main/libmain.a
-LOAD esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
 LOAD esp-idf/app_trace/libapp_trace.a
 LOAD esp-idf/app_trace/libapp_trace.a
 LOAD esp-idf/cmock/libcmock.a
