@@ -1,0 +1,77 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081736: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x400869b5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d799: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x4008711f: xQueueReceive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:1531 (discriminator 1)
+0x400d5cc4: handleInput at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:60
+0x400d5abf: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:39
+0x40087449: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

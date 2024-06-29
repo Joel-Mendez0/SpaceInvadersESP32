@@ -1,0 +1,624 @@
+0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7172
+load:0x40078000,len:15552
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2024 19:32:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5e4h ( 50660) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001c60c vaddr=3ffb0000 size=02394h (  9108) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001e9a8 vaddr=40080000 size=01670h (  5744) load[0m
+[0;32mI (127) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18920h (100640) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=00038948 vaddr=40081670 size=0d88ch ( 55436) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (208) cpu_start: Pro cpu start user code[0m
+[0;32mI (208) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (208) cpu_start: Application information:[0m
+[0;32mI (211) cpu_start: Project name:     SpaceInvadersTest[0m
+[0;32mI (217) cpu_start: App version:      v5.2.2-dirty[0m
+[0;32mI (222) cpu_start: Compile time:     Jun 25 2024 19:32:04[0m
+[0;32mI (228) cpu_start: ELF file SHA256:  53408ca25...[0m
+[0;32mI (234) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (239) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (244) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (249) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (253) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFB31C8 len 0002CE38 (179 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 4008EEFC len 00011104 (68 KiB): IRAM[0m
+[0;32mI (293) spi_flash: detected chip: generic[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (311) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (321) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (331) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+Buttons Configured!
+[0;32mI (341) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (351) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (491) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (491) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (501) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (511) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (511) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (521) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (531) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (551) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (561) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (571) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (571) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (581) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (591) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (591) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (601) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (611) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (621) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (621) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (631) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (641) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (641) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (651) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (661) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (671) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (671) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (681) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (691) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (691) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (701) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (711) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (721) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (721) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (731) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (741) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (751) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (751) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (761) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (771) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (771) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (781) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (791) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (801) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (801) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (811) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (821) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (821) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (831) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (841) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (851) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (851) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (861) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (871) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (871) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (881) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (891) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (901) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (901) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (911) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (931) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (931) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (941) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (961) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (971) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (991) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1011) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1041) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1071) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1091) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1101) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1111) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1111) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1121) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1131) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1141) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1141) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1151) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1161) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1171) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1171) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1181) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1191) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1191) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1201) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1211) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1221) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1221) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1231) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1241) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1251) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1251) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1261) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1271) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1271) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1281) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1291) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1301) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1301) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1311) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1321) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1331) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1331) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1341) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1351) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1351) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1361) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1371) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1381) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1381) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1391) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1401) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1411) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1411) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1421) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1431) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1431) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1441) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1451) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1461) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1461) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1471) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1491) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1491) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1501) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1511) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1521) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1521) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1531) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1551) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1561) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1571) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1571) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1581) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1591) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1601) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1601) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1611) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1621) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1621) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1631) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1641) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1651) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1651) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1661) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1671) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1681) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1681) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1691) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1701) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1701) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1711) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1721) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1731) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1731) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1741) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1751) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1761) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1761) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1771) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1781) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1781) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1791) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1801) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1811) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1811) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1821) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1831) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1841) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1841) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1851) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1861) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1871) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1871) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1881) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1891) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1891) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1901) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1911) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1931) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1941) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1961) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1971) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1971) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (1991) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2011) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2041) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2071) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2091) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2101) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2111) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2111) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2121) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2131) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2131) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2141) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2151) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2161) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2161) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2171) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2181) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2191) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2191) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2201) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2211) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2221) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2221) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2231) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2241) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2241) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2251) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2261) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2271) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2271) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2281) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2291) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2301) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2301) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2311) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2321) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2321) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2331) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2341) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (2351) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+Button GPIO 33 pressed
+[0;31mE (5921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5931) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5941) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5941) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5961) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5961) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5971) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5991) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (5991) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6011) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6041) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6041) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6071) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6071) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6091) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6101) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6101) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6111) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6121) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6121) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6131) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6141) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6151) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6151) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6161) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6171) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6181) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6181) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6191) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+Button GPIO 33 pressed
+[0;31mE (6291) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6291) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6301) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6301) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6311) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6321) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6321) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6331) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6341) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6351) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6351) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6361) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6371) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6381) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6381) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6391) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6401) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6401) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6411) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6421) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6431) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6431) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6441) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6451) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6461) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6461) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6471) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6491) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6501) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6511) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6511) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6521) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6531) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6551) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6561) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (6571) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+Button GPIO 5 pressed
+[0;31mE (7981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (7981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (7981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (7991) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8011) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8041) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8071) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8081) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8091) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8101) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8101) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8111) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8121) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8131) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8131) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8141) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8151) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8161) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8161) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8171) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8181) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8181) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8191) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8201) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8211) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8211) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8221) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8231) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8241) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8241) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (8251) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+Button GPIO 21 pressed
+[0;31mE (9801) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9801) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9801) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9811) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9821) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9821) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9831) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9841) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9841) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9851) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9861) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9871) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9871) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9881) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9891) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9901) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9901) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9911) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9921) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9931) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9941) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9951) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9961) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9971) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9981) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (9991) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10001) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10011) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10021) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10031) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10041) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10051) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10061) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (10071) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+Button GPIO 0 pressed
+[0;31mE (11371) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11371) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11371) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11381) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11391) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11391) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11401) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11411) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11411) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11421) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11431) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11441) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11441) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11451) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11461) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11471) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11471) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11481) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11491) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11501) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11501) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11511) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11521) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11531) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11531) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11541) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11551) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11561) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11561) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11571) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11581) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11581) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11591) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11601) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11611) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11611) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11621) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11631) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11641) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+[0;31mE (11641) lcd_panel: esp_lcd_panel_draw_bitmap(33): invalid panel handle[0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+

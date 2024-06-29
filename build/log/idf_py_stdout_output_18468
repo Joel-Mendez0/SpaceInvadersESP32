@@ -1,0 +1,380 @@
+0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2024 16:03:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c82ch ( 51244) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c854 vaddr=3ffb0000 size=02394h (  9108) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ebf0 vaddr=40080000 size=01428h (  5160) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18324h ( 99108) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=0003834c vaddr=40081428 size=0d8f0h ( 55536) load[0m
+[0;32mI (200) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (200) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     SpaceInvadersTest[0m
+[0;32mI (229) cpu_start: App version:      v5.2.2-dirty[0m
+[0;32mI (234) cpu_start: Compile time:     Jun 25 2024 16:02:49[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  c38bf37ec...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB31B8 len 0002CE48 (179 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008ED18 len 000112E8 (68 KiB): IRAM[0m
+[0;32mI (306) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (326) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+[0;32mI (336) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+ 0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 
+
+X coordinates:
+ 0  16  32  48  64  80  96  112  128  144  160  176  192  208  224  240  256  272  288  304 
+Y coordinates:
+ 0  16  32  48  64  80  96  112  128  144  160  176  192  208  224 
+Top-left coordinates for each cell:
+Top-left coordinates of cell (0, 0): x = 0, y = 0
+Top-left coordinates of cell (0, 1): x = 16, y = 0
+Top-left coordinates of cell (0, 2): x = 32, y = 0
+Top-left coordinates of cell (0, 3): x = 48, y = 0
+Top-left coordinates of cell (0, 4): x = 64, y = 0
+Top-left coordinates of cell (0, 5): x = 80, y = 0
+Top-left coordinates of cell (0, 6): x = 96, y = 0
+Top-left coordinates of cell (0, 7): x = 112, y = 0
+Top-left coordinates of cell (0, 8): x = 128, y = 0
+Top-left coordinates of cell (0, 9): x = 144, y = 0
+Top-left coordinates of cell (0, 10): x = 160, y = 0
+Top-left coordinates of cell (0, 11): x = 176, y = 0
+Top-left coordinates of cell (0, 12): x = 192, y = 0
+Top-left coordinates of cell (0, 13): x = 208, y = 0
+Top-left coordinates of cell (0, 14): x = 224, y = 0
+Top-left coordinates of cell (0, 15): x = 240, y = 0
+Top-left coordinates of cell (0, 16): x = 256, y = 0
+Top-left coordinates of cell (0, 17): x = 272, y = 0
+Top-left coordinates of cell (0, 18): x = 288, y = 0
+Top-left coordinates of cell (0, 19): x = 304, y = 0
+Top-left coordinates of cell (1, 0): x = 0, y = 16
+Top-left coordinates of cell (1, 1): x = 16, y = 16
+Top-left coordinates of cell (1, 2): x = 32, y = 16
+Top-left coordinates of cell (1, 3): x = 48, y = 16
+Top-left coordinates of cell (1, 4): x = 64, y = 16
+Top-left coordinates of cell (1, 5): x = 80, y = 16
+Top-left coordinates of cell (1, 6): x = 96, y = 16
+Top-left coordinates of cell (1, 7): x = 112, y = 16
+Top-left coordinates of cell (1, 8): x = 128, y = 16
+Top-left coordinates of cell (1, 9): x = 144, y = 16
+Top-left coordinates of cell (1, 10): x = 160, y = 16
+Top-left coordinates of cell (1, 11): x = 176, y = 16
+Top-left coordinates of cell (1, 12): x = 192, y = 16
+Top-left coordinates of cell (1, 13): x = 208, y = 16
+Top-left coordinates of cell (1, 14): x = 224, y = 16
+Top-left coordinates of cell (1, 15): x = 240, y = 16
+Top-left coordinates of cell (1, 16): x = 256, y = 16
+Top-left coordinates of cell (1, 17): x = 272, y = 16
+Top-left coordinates of cell (1, 18): x = 288, y = 16
+Top-left coordinates of cell (1, 19): x = 304, y = 16
+Top-left coordinates of cell (2, 0): x = 0, y = 32
+Top-left coordinates of cell (2, 1): x = 16, y = 32
+Top-left coordinates of cell (2, 2): x = 32, y = 32
+Top-left coordinates of cell (2, 3): x = 48, y = 32
+Top-left coordinates of cell (2, 4): x = 64, y = 32
+Top-left coordinates of cell (2, 5): x = 80, y = 32
+Top-left coordinates of cell (2, 6): x = 96, y = 32
+Top-left coordinates of cell (2, 7): x = 112, y = 32
+Top-left coordinates of cell (2, 8): x = 128, y = 32
+Top-left coordinates of cell (2, 9): x = 144, y = 32
+Top-left coordinates of cell (2, 10): x = 160, y = 32
+Top-left coordinates of cell (2, 11): x = 176, y = 32
+Top-left coordinates of cell (2, 12): x = 192, y = 32
+Top-left coordinates of cell (2, 13): x = 208, y = 32
+Top-left coordinates of cell (2, 14): x = 224, y = 32
+Top-left coordinates of cell (2, 15): x = 240, y = 32
+Top-left coordinates of cell (2, 16): x = 256, y = 32
+Top-left coordinates of cell (2, 17): x = 272, y = 32
+Top-left coordinates of cell (2, 18): x = 288, y = 32
+Top-left coordinates of cell (2, 19): x = 304, y = 32
+Top-left coordinates of cell (3, 0): x = 0, y = 48
+Top-left coordinates of cell (3, 1): x = 16, y = 48
+Top-left coordinates of cell (3, 2): x = 32, y = 48
+Top-left coordinates of cell (3, 3): x = 48, y = 48
+Top-left coordinates of cell (3, 4): x = 64, y = 48
+Top-left coordinates of cell (3, 5): x = 80, y = 48
+Top-left coordinates of cell (3, 6): x = 96, y = 48
+Top-left coordinates of cell (3, 7): x = 112, y = 48
+Top-left coordinates of cell (3, 8): x = 128, y = 48
+Top-left coordinates of cell (3, 9): x = 144, y = 48
+Top-left coordinates of cell (3, 10): x = 160, y = 48
+Top-left coordinates of cell (3, 11): x = 176, y = 48
+Top-left coordinates of cell (3, 12): x = 192, y = 48
+Top-left coordinates of cell (3, 13): x = 208, y = 48
+Top-left coordinates of cell (3, 14): x = 224, y = 48
+Top-left coordinates of cell (3, 15): x = 240, y = 48
+Top-left coordinates of cell (3, 16): x = 256, y = 48
+Top-left coordinates of cell (3, 17): x = 272, y = 48
+Top-left coordinates of cell (3, 18): x = 288, y = 48
+Top-left coordinates of cell (3, 19): x = 304, y = 48
+Top-left coordinates of cell (4, 0): x = 0, y = 64
+Top-left coordinates of cell (4, 1): x = 16, y = 64
+Top-left coordinates of cell (4, 2): x = 32, y = 64
+Top-left coordinates of cell (4, 3): x = 48, y = 64
+Top-left coordinates of cell (4, 4): x = 64, y = 64
+Top-left coordinates of cell (4, 5): x = 80, y = 64
+Top-left coordinates of cell (4, 6): x = 96, y = 64
+Top-left coordinates of cell (4, 7): x = 112, y = 64
+Top-left coordinates of cell (4, 8): x = 128, y = 64
+Top-left coordinates of cell (4, 9): x = 144, y = 64
+Top-left coordinates of cell (4, 10): x = 160, y = 64
+Top-left coordinates of cell (4, 11): x = 176, y = 64
+Top-left coordinates of cell (4, 12): x = 192, y = 64
+Top-left coordinates of cell (4, 13): x = 208, y = 64
+Top-left coordinates of cell (4, 14): x = 224, y = 64
+Top-left coordinates of cell (4, 15): x = 240, y = 64
+Top-left coordinates of cell (4, 16): x = 256, y = 64
+Top-left coordinates of cell (4, 17): x = 272, y = 64
+Top-left coordinates of cell (4, 18): x = 288, y = 64
+Top-left coordinates of cell (4, 19): x = 304, y = 64
+Top-left coordinates of cell (5, 0): x = 0, y = 80
+Top-left coordinates of cell (5, 1): x = 16, y = 80
+Top-left coordinates of cell (5, 2): x = 32, y = 80
+Top-left coordinates of cell (5, 3): x = 48, y = 80
+Top-left coordinates of cell (5, 4): x = 64, y = 80
+Top-left coordinates of cell (5, 5): x = 80, y = 80
+Top-left coordinates of cell (5, 6): x = 96, y = 80
+Top-left coordinates of cell (5, 7): x = 112, y = 80
+Top-left coordinates of cell (5, 8): x = 128, y = 80
+Top-left coordinates of cell (5, 9): x = 144, y = 80
+Top-left coordinates of cell (5, 10): x = 160, y = 80
+Top-left coordinates of cell (5, 11): x = 176, y = 80
+Top-left coordinates of cell (5, 12): x = 192, y = 80
+Top-left coordinates of cell (5, 13): x = 208, y = 80
+Top-left coordinates of cell (5, 14): x = 224, y = 80
+Top-left coordinates of cell (5, 15): x = 240, y = 80
+Top-left coordinates of cell (5, 16): x = 256, y = 80
+Top-left coordinates of cell (5, 17): x = 272, y = 80
+Top-left coordinates of cell (5, 18): x = 288, y = 80
+Top-left coordinates of cell (5, 19): x = 304, y = 80
+Top-left coordinates of cell (6, 0): x = 0, y = 96
+Top-left coordinates of cell (6, 1): x = 16, y = 96
+Top-left coordinates of cell (6, 2): x = 32, y = 96
+Top-left coordinates of cell (6, 3): x = 48, y = 96
+Top-left coordinates of cell (6, 4): x = 64, y = 96
+Top-left coordinates of cell (6, 5): x = 80, y = 96
+Top-left coordinates of cell (6, 6): x = 96, y = 96
+Top-left coordinates of cell (6, 7): x = 112, y = 96
+Top-left coordinates of cell (6, 8): x = 128, y = 96
+Top-left coordinates of cell (6, 9): x = 144, y = 96
+Top-left coordinates of cell (6, 10): x = 160, y = 96
+Top-left coordinates of cell (6, 11): x = 176, y = 96
+Top-left coordinates of cell (6, 12): x = 192, y = 96
+Top-left coordinates of cell (6, 13): x = 208, y = 96
+Top-left coordinates of cell (6, 14): x = 224, y = 96
+Top-left coordinates of cell (6, 15): x = 240, y = 96
+Top-left coordinates of cell (6, 16): x = 256, y = 96
+Top-left coordinates of cell (6, 17): x = 272, y = 96
+Top-left coordinates of cell (6, 18): x = 288, y = 96
+Top-left coordinates of cell (6, 19): x = 304, y = 96
+Top-left coordinates of cell (7, 0): x = 0, y = 112
+Top-left coordinates of cell (7, 1): x = 16, y = 112
+Top-left coordinates of cell (7, 2): x = 32, y = 112
+Top-left coordinates of cell (7, 3): x = 48, y = 112
+Top-left coordinates of cell (7, 4): x = 64, y = 112
+Top-left coordinates of cell (7, 5): x = 80, y = 112
+Top-left coordinates of cell (7, 6): x = 96, y = 112
+Top-left coordinates of cell (7, 7): x = 112, y = 112
+Top-left coordinates of cell (7, 8): x = 128, y = 112
+Top-left coordinates of cell (7, 9): x = 144, y = 112
+Top-left coordinates of cell (7, 10): x = 160, y = 112
+Top-left coordinates of cell (7, 11): x = 176, y = 112
+Top-left coordinates of cell (7, 12): x = 192, y = 112
+Top-left coordinates of cell (7, 13): x = 208, y = 112
+Top-left coordinates of cell (7, 14): x = 224, y = 112
+Top-left coordinates of cell (7, 15): x = 240, y = 112
+Top-left coordinates of cell (7, 16): x = 256, y = 112
+Top-left coordinates of cell (7, 17): x = 272, y = 112
+Top-left coordinates of cell (7, 18): x = 288, y = 112
+Top-left coordinates of cell (7, 19): x = 304, y = 112
+Top-left coordinates of cell (8, 0): x = 0, y = 128
+Top-left coordinates of cell (8, 1): x = 16, y = 128
+Top-left coordinates of cell (8, 2): x = 32, y = 128
+Top-left coordinates of cell (8, 3): x = 48, y = 128
+Top-left coordinates of cell (8, 4): x = 64, y = 128
+Top-left coordinates of cell (8, 5): x = 80, y = 128
+Top-left coordinates of cell (8, 6): x = 96, y = 128
+Top-left coordinates of cell (8, 7): x = 112, y = 128
+Top-left coordinates of cell (8, 8): x = 128, y = 128
+Top-left coordinates of cell (8, 9): x = 144, y = 128
+Top-left coordinates of cell (8, 10): x = 160, y = 128
+Top-left coordinates of cell (8, 11): x = 176, y = 128
+Top-left coordinates of cell (8, 12): x = 192, y = 128
+Top-left coordinates of cell (8, 13): x = 208, y = 128
+Top-left coordinates of cell (8, 14): x = 224, y = 128
+Top-left coordinates of cell (8, 15): x = 240, y = 128
+Top-left coordinates of cell (8, 16): x = 256, y = 128
+Top-left coordinates of cell (8, 17): x = 272, y = 128
+Top-left coordinates of cell (8, 18): x = 288, y = 128
+Top-left coordinates of cell (8, 19): x = 304, y = 128
+Top-left coordinates of cell (9, 0): x = 0, y = 144
+Top-left coordinates of cell (9, 1): x = 16, y = 144
+Top-left coordinates of cell (9, 2): x = 32, y = 144
+Top-left coordinates of cell (9, 3): x = 48, y = 144
+Top-left coordinates of cell (9, 4): x = 64, y = 144
+Top-left coordinates of cell (9, 5): x = 80, y = 144
+Top-left coordinates of cell (9, 6): x = 96, y = 144
+Top-left coordinates of cell (9, 7): x = 112, y = 144
+Top-left coordinates of cell (9, 8): x = 128, y = 144
+Top-left coordinates of cell (9, 9): x = 144, y = 144
+Top-left coordinates of cell (9, 10): x = 160, y = 144
+Top-left coordinates of cell (9, 11): x = 176, y = 144
+Top-left coordinates of cell (9, 12): x = 192, y = 144
+Top-left coordinates of cell (9, 13): x = 208, y = 144
+Top-left coordinates of cell (9, 14): x = 224, y = 144
+Top-left coordinates of cell (9, 15): x = 240, y = 144
+Top-left coordinates of cell (9, 16): x = 256, y = 144
+Top-left coordinates of cell (9, 17): x = 272, y = 144
+Top-left coordinates of cell (9, 18): x = 288, y = 144
+Top-left coordinates of cell (9, 19): x = 304, y = 144
+Top-left coordinates of cell (10, 0): x = 0, y = 160
+Top-left coordinates of cell (10, 1): x = 16, y = 160
+Top-left coordinates of cell (10, 2): x = 32, y = 160
+Top-left coordinates of cell (10, 3): x = 48, y = 160
+Top-left coordinates of cell (10, 4): x = 64, y = 160
+Top-left coordinates of cell (10, 5): x = 80, y = 160
+Top-left coordinates of cell (10, 6): x = 96, y = 160
+Top-left coordinates of cell (10, 7): x = 112, y = 160
+Top-left coordinates of cell (10, 8): x = 128, y = 160
+Top-left coordinates of cell (10, 9): x = 144, y = 160
+Top-left coordinates of cell (10, 10): x = 160, y = 160
+Top-left coordinates of cell (10, 11): x = 176, y = 160
+Top-left coordinates of cell (10, 12): x = 192, y = 160
+Top-left coordinates of cell (10, 13): x = 208, y = 160
+Top-left coordinates of cell (10, 14): x = 224, y = 160
+Top-left coordinates of cell (10, 15): x = 240, y = 160
+Top-left coordinates of cell (10, 16): x = 256, y = 160
+Top-left coordinates of cell (10, 17): x = 272, y = 160
+Top-left coordinates of cell (10, 18): x = 288, y = 160
+Top-left coordinates of cell (10, 19): x = 304, y = 160
+Top-left coordinates of cell (11, 0): x = 0, y = 176
+Top-left coordinates of cell (11, 1): x = 16, y = 176
+Top-left coordinates of cell (11, 2): x = 32, y = 176
+Top-left coordinates of cell (11, 3): x = 48, y = 176
+Top-left coordinates of cell (11, 4): x = 64, y = 176
+Top-left coordinates of cell (11, 5): x = 80, y = 176
+Top-left coordinates of cell (11, 6): x = 96, y = 176
+Top-left coordinates of cell (11, 7): x = 112, y = 176
+Top-left coordinates of cell (11, 8): x = 128, y = 176
+Top-left coordinates of cell (11, 9): x = 144, y = 176
+Top-left coordinates of cell (11, 10): x = 160, y = 176
+Top-left coordinates of cell (11, 11): x = 176, y = 176
+Top-left coordinates of cell (11, 12): x = 192, y = 176
+Top-left coordinates of cell (11, 13): x = 208, y = 176
+Top-left coordinates of cell (11, 14): x = 224, y = 176
+Top-left coordinates of cell (11, 15): x = 240, y = 176
+Top-left coordinates of cell (11, 16): x = 256, y = 176
+Top-left coordinates of cell (11, 17): x = 272, y = 176
+Top-left coordinates of cell (11, 18): x = 288, y = 176
+Top-left coordinates of cell (11, 19): x = 304, y = 176
+Top-left coordinates of cell (12, 0): x = 0, y = 192
+Top-left coordinates of cell (12, 1): x = 16, y = 192
+Top-left coordinates of cell (12, 2): x = 32, y = 192
+Top-left coordinates of cell (12, 3): x = 48, y = 192
+Top-left coordinates of cell (12, 4): x = 64, y = 192
+Top-left coordinates of cell (12, 5): x = 80, y = 192
+Top-left coordinates of cell (12, 6): x = 96, y = 192
+Top-left coordinates of cell (12, 7): x = 112, y = 192
+Top-left coordinates of cell (12, 8): x = 128, y = 192
+Top-left coordinates of cell (12, 9): x = 144, y = 192
+Top-left coordinates of cell (12, 10): x = 160, y = 192
+Top-left coordinates of cell (12, 11): x = 176, y = 192
+Top-left coordinates of cell (12, 12): x = 192, y = 192
+Top-left coordinates of cell (12, 13): x = 208, y = 192
+Top-left coordinates of cell (12, 14): x = 224, y = 192
+Top-left coordinates of cell (12, 15): x = 240, y = 192
+Top-left coordinates of cell (12, 16): x = 256, y = 192
+Top-left coordinates of cell (12, 17): x = 272, y = 192
+Top-left coordinates of cell (12, 18): x = 288, y = 192
+Top-left coordinates of cell (12, 19): x = 304, y = 192
+Top-left coordinates of cell (13, 0): x = 0, y = 208
+Top-left coordinates of cell (13, 1): x = 16, y = 208
+Top-left coordinates of cell (13, 2): x = 32, y = 208
+Top-left coordinates of cell (13, 3): x = 48, y = 208
+Top-left coordinates of cell (13, 4): x = 64, y = 208
+Top-left coordinates of cell (13, 5): x = 80, y = 208
+Top-left coordinates of cell (13, 6): x = 96, y = 208
+Top-left coordinates of cell (13, 7): x = 112, y = 208
+Top-left coordinates of cell (13, 8): x = 128, y = 208
+Top-left coordinates of cell (13, 9): x = 144, y = 208
+Top-left coordinates of cell (13, 10): x = 160, y = 208
+Top-left coordinates of cell (13, 11): x = 176, y = 208
+Top-left coordinates of cell (13, 12): x = 192, y = 208
+Top-left coordinates of cell (13, 13): x = 208, y = 208
+Top-left coordinates of cell (13, 14): x = 224, y = 208
+Top-left coordinates of cell (13, 15): x = 240, y = 208
+Top-left coordinates of cell (13, 16): x = 256, y = 208
+Top-left coordinates of cell (13, 17): x = 272, y = 208
+Top-left coordinates of cell (13, 18): x = 288, y = 208
+Top-left coordinates of cell (13, 19): x = 304, y = 208
+Top-left coordinates of cell (14, 0): x = 0, y = 224
+Top-left coordinates of cell (14, 1): x = 16, y = 224
+Top-left coordinates of cell (14, 2): x = 32, y = 224
+Top-left coordinates of cell (14, 3): x = 48, y = 224
+Top-left coordinates of cell (14, 4): x = 64, y = 224
+Top-left coordinates of cell (14, 5): x = 80, y = 224
+Top-left coordinates of cell (14, 6): x = 96, y = 224
+Top-left coordinates of cell (14, 7): x = 112, y = 224
+Top-left coordinates of cell (14, 8): x = 128, y = 224
+Top-left coordinates of cell (14, 9): x = 144, y = 224
+Top-left coordinates of cell (14, 10): x = 160, y = 224
+Top-left coordinates of cell (14, 11): x = 176, y = 224
+Top-left coordinates of cell (14, 12): x = 192, y = 224
+Top-left coordinates of cell (14, 13): x = 208, y = 224
+Top-left coordinates of cell (14, 14): x = 224, y = 224
+Top-left coordinates of cell (14, 15): x = 240, y = 224
+Top-left coordinates of cell (14, 16): x = 256, y = 224
+Top-left coordinates of cell (14, 17): x = 272, y = 224
+Top-left coordinates of cell (14, 18): x = 288, y = 224
+Top-left coordinates of cell (14, 19): x = 304, y = 224

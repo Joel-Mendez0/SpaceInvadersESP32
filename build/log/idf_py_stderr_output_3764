@@ -1,0 +1,18 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM11 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dbdbc: find_entry_from_task_handle_and_check_all_reset at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:154
+[0m
+[0;33m0x400dbdb9: find_entry_from_task_handle_and_check_all_reset at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:153
+0x400dc24d: esp_task_wdt_reset at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:712
+0x400dc29b: idle_hook_cb at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:468
+0x400d2315: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/freertos_hooks.c:47 (discriminator 1)
+0x4008841e: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/tasks.c:4307 (discriminator 1)
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

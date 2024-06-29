@@ -1,0 +1,27 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/game.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c: In function 'game_task':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:18:28: warning: unused variable 'panel_handle' [-Wunused-variable]
+   18 |     esp_lcd_panel_handle_t panel_handle = (esp_lcd_panel_handle_t)pvParameters;
+      |                            ^~~~~~~~~~~~
+[3/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gamestate.c.obj
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/handleinput.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c: In function 'InitGPIO':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:35:62: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   35 |         gpio_isr_handler_add(gpio_pins[i], gpio_isr_handler, (void*)gpio_pins[i]);
+      |                                                              ^
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[6/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/draw.c.obj
+[7/11] Linking C static library esp-idf\main\libmain.a
+[8/11] Generating ld/sections.ld
+[9/11] Linking CXX executable SpaceInvadersTest.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin
+[11/11] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin"
+SpaceInvadersTest.bin binary size 0x36b50 bytes. Smallest app partition is 0x100000 bytes. 0xc94b0 bytes (79%) free.

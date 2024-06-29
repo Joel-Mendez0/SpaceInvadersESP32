@@ -1,0 +1,22 @@
+[1/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gamestate.c.obj
+[2/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/render.c.obj
+[4/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\bootloader\esp-idf\esptool_py && python C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/game.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c: In function 'game_task':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:23:28: warning: unused variable 'panel_handle' [-Wunused-variable]
+   23 |     esp_lcd_panel_handle_t panel_handle = (esp_lcd_panel_handle_t)pvParameters;
+      |                            ^~~~~~~~~~~~
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable SpaceInvadersTest.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin
+[10/10] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\esp-idf\esptool_py && python C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin"
+SpaceInvadersTest.bin binary size 0x35ab0 bytes. Smallest app partition is 0x100000 bytes. 0xca550 bytes (79%) free.

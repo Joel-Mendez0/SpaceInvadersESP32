@@ -1,0 +1,342 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008173e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x40086b99: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x4008d97d: __assert_func at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/assert.c:81
+0x400d6f6f: panel_st7789_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_st7789.c:201 (discriminator 1)
+0x400d730a: esp_lcd_panel_draw_bitmap at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/src/esp_lcd_panel_ops.c:34
+0x400d59a5: draw_pixel at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:5
+0x400d5b52: draw_spaceship at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/draw.c:184
+0x400d60dd: Game_Init at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/gamestate.c:33
+0x400d5ff6: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:20
+0x4008762d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Espressif\frameworks\esp-idf-v5.2.2\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

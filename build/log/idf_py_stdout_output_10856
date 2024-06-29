@@ -1,0 +1,42 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\bootloader\esp-idf\esptool_py && python C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gamestate.c.obj
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/render.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c: In function 'print_top_left_coordinates':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c:5:13: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+    5 |     if (row < 0 || row >= ROWS || col < 0 || col >= COLS) {
+      |             ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c:5:39: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+    5 |     if (row < 0 || row >= ROWS || col < 0 || col >= COLS) {
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c: In function 'get_top_left_coordinates_x':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c:17:13: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   17 |     if (col < 0 || col >= COLS) {
+      |             ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c: In function 'get_top_left_coordinates_y':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.c:25:13: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   25 |     if (row < 0 || row >= ROWS) {
+      |             ^
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/game.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c: In function 'game_task':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:37:43: warning: passing argument 2 of 'draw_game_state' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   37 |             draw_game_state(panel_handle, &game_state);
+      |                                           ^~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.h:14,
+                 from C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:1:
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/render.h:22:71: note: expected 'GAME_STATE *' but argument is of type 'volatile GAME_STATE *'
+   22 | void draw_game_state(esp_lcd_panel_handle_t panel_handle, GAME_STATE *game_state);
+      |                                                           ~~~~~~~~~~~~^~~~~~~~~~
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable SpaceInvadersTest.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin
+[10/10] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\esp-idf\esptool_py && python C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin"
+SpaceInvadersTest.bin binary size 0x35a70 bytes. Smallest app partition is 0x100000 bytes. 0xca590 bytes (79%) free.

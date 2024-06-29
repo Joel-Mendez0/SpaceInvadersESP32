@@ -1,0 +1,67 @@
+[1/14] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/game.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c: In function 'game_task':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:17:28: warning: unused variable 'panel_handle' [-Wunused-variable]
+   17 |     esp_lcd_panel_handle_t panel_handle = (esp_lcd_panel_handle_t)pvParameters;
+      |                            ^~~~~~~~~~~~
+[3/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gamestate.c.obj
+[4/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/handleinput.c.obj
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c: In function 'InitGPIO':
+C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/handleinput.c:35:62: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   35 |         gpio_isr_handler_add(gpio_pins[i], gpio_isr_handler, (void*)gpio_pins[i]);
+      |                                                              ^
+[5/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/draw.c.obj
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[7/12] Linking C static library esp-idf\main\libmain.a
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable SpaceInvadersTest.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin
+[11/12] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\projects\SpaceInvadersTest\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build/SpaceInvadersTest.bin"
+SpaceInvadersTest.bin binary size 0x36520 bytes. Smallest app partition is 0x100000 bytes. 0xc9ae0 bytes (79%) free.
+[11/12] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/resptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 SpaceInvadersTest.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: d4:d4:da:13:94:94
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00046fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26736 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26736 bytes (16365 compressed) at 0x00001000 in 0.8 seconds (effective 284.2 kbit/s)...
+Hash of data verified.
+Compressed 222496 bytes to 118842...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001c5e3... (25 %)
+Writing at 0x00023a75... (37 %)
+Writing at 0x00029d4f... (50 %)
+Writing at 0x000300a3... (62 %)
+Writing at 0x000388ad... (75 %)
+Writing at 0x0003e45e... (87 %)
+Writing at 0x00044a91... (100 %)
+Wrote 222496 bytes (118842 compressed) at 0x00010000 in 2.8 seconds (effective 630.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 455.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+un_serial_tool.cmake"
