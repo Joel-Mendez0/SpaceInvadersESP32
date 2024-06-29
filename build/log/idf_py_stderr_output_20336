@@ -1,0 +1,1234 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM11 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5083: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x40082a46: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:314
+0x400de68e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400ddadf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d6555: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:169
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5071: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:163
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5089: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5071: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:163
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5089: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d506c: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:162
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d581d: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:213
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5089: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400dd7f0: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:51
+0x400e1af7: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e14ba: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400ddadf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d6555: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:169
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5083: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5083: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5089: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507e: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5083: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5071: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:163
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5089: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400e1540: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1783
+0x400ddadf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d6555: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:169
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x400893de: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetCurrentTaskHandle at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/tasks.c:4940
+0x4008717b: xQueueGiveMutexRecursive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:773
+0x4008293b: lock_release_generic at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:190
+0x40082a0d: _lock_release_recursive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:202
+0x40082a5a: __retarget_lock_release_recursive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:340
+0x400e14e9: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1779 (discriminator 3)
+0x400ddadf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d6555: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:169
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400dd9b9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:203
+0x400e1af7: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e14ba: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400ddadf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d6555: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:169
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5083: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d507b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5071: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:163
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5071: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:163
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5083: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5074: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5089: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dc1a7: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400dc56c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x400831e5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d5071: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:163
+0x400d583b: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d46a3: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d422e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40058ca4: __swbuf_r in ROM
+0x400ddb46: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400ddba5: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400d6569: print_board at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:171
+0x400d687b: Update_Enemies at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/state.c:139
+0x400d62c2: game_task at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/SpaceInvadersTest/main/game.c:10
+0x40087f59: prvReloadTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:574
+0x40087f91: prvProcessExpiredTimer at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:593
+0x4008803d: prvProcessTimerOrBlockTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:663
+0x400881b8: prvTimerTask at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/timers.c:634
+0x400876d9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m
