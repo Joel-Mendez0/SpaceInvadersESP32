@@ -100,4 +100,4 @@ Defines all game-related structures, including:
 - **Select/Start**: Select button (GPIO 21)
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License.
